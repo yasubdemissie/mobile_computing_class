@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root {
+            --bg-color-white: rgb(65, 155, 211);
+        }
+        header {
+            width: 100dvw;
+            height: 20vh;
+            background: var(--bg-color-white);
+            position: sticky;
+            top: 0;
+        }
+        body {
+            width: 100dvw;
+            margin: 0;
+        }
+        main {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+
+        }
+        main .sidebar {
+            background: red;
+            width: 25%;
+        }
+        main .mainBody {
+            background: blue;
+            width: 50%;
+        }
+        main .right {
+            background: rgb(4, 150, 67);
+            width: 25%;
+        }
+        footer {
+            width: 100dvw;
+            height: 40dvh;
+            background: #000;
+        }
+    </style>
+
+    <header class="head">
+        <nav></nav>
+    </header>
+
+    <main class="body">
+        <div class="sidebar"></div>
+        <div class="mainBody">
+            <button type="button" class="btn" onclick="window.alert('The Good news!')" >Click here</button>
+        </div>
+        <div class="right"></div>
+    </main>
+
+    <footer class="foot"></footer>
+
+    <script>
+        function Alert() {
+            window.alert("The Good news!");
+        }
+    </script>
+</body>
+</html>
